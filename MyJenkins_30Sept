@@ -18,7 +18,7 @@ stages {
       stage('Build Stage'){
 	  
 	  steps{
-	  
+	  sh 'pwd'
 	  sh 'mvn clean package'
 	  
 	  }
