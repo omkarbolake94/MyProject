@@ -60,7 +60,7 @@ DOCKER_IMAGE = "v:${BUILD_NUMBER}"
 	  
 	  docker.withRegistry('',registryCredential)
 	  
-	  dockerImage.push('latest')
+	  dockerImage.push()
 	  
 	  }
 	  }
