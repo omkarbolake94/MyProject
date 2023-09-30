@@ -10,7 +10,7 @@ environment{
 
 registry = "omkarbolake94/myproject"
 registryCredential = "dockerhub"
-DOCKER_IMAGE = "v:${BUILD_NUMBER}"
+
 
 }
 
@@ -31,6 +31,13 @@ stages {
 	  
 	  
 	  stage('Build Image'){
+
+environment{
+
+
+DOCKER_IMAGE = "v:${BUILD_NUMBER}"
+
+}
 	  
 	  steps {
              
