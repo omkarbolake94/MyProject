@@ -9,7 +9,7 @@ agent{
 environment{
 
 registry = "omkarbolake94/myproject"
-registryCredential = "dockerhub"
+registryCredential = 'dockerhub'
 
 
 }
