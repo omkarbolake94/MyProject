@@ -59,9 +59,9 @@ DOCKER_IMAGE = "v:${BUILD_NUMBER}"
 	  script{
 	  
 	  docker.withRegistry('',registryCredential)
-	  
-	  dockerImage.push()
-	  
+	  {
+	  dockerImage.push('latest')
+	  }
 	  }
 	  }
 	  }
