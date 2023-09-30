@@ -15,7 +15,7 @@ registryCredential = "dockerhub"
 
 stages {
 
-      stage("Build Stage"){
+      stage('Build Stage'){
 	  
 	  steps{
 	  
@@ -28,7 +28,7 @@ stages {
 	  
 	  
 	  
-	  stage("Build Image"){
+	  stage('Build Image'){
 	  
 	  steps {
 	  script {
@@ -41,7 +41,7 @@ stages {
 	  
 	  }
 	  
-	  stage("Upload Image to Dockerhub")
+	  stage('Upload Image to Dockerhub')
 	  {
 	  steps{
 	  script{
