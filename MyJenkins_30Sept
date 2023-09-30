@@ -15,7 +15,8 @@ registryCredential = 'dockerhub2'
 }
 
 stages {
-
+DOCKER_IMAGE = "v:${BUILD_NUMBER}"
+def dockerImage = docker.image("${DOCKER_IMAGE}")
       stage('Build Stage'){
 	  
 	  steps{
@@ -35,7 +36,7 @@ stages {
 environment{
 
 
-DOCKER_IMAGE = "v:${BUILD_NUMBER}"
+
 
 }
 	  
@@ -45,7 +46,7 @@ DOCKER_IMAGE = "v:${BUILD_NUMBER}"
 	  script {
 	  sh 'docker build -t ${DOCKER_IMAGE}  -f Dockerfile2 .'
 	
-       def dockerImage = docker.image("${DOCKER_IMAGE}")
+       
 	  
 	  }
 	  
