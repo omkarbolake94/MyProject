@@ -52,8 +52,8 @@ stages {
 	  script{
 	  
 	  docker.withRegistry('',registryCredential)
-	  dockerImage.push("V$BUILD_NUMBER")
-	  dockerImage.push('Latest')
+	  
+	  dockerImage.push('latest')
 	  
 	  }
 	  }
