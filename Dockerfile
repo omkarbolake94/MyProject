@@ -14,3 +14,7 @@
 
 #FROM openjdk:8
 #ENTRYPOINT ["java","-jar","target/spring-boot-web.jar"]
+FROM  redhat/ubi9-micro:latest
+RUN yum install wget -y
+RUN yum install mvn -y
+RUN curl -fsSLO https://get.docker.com/builds/Linux/x86_64/docker-17.04.0-ce.tgz && tar xzvf docker-17.04.0-ce.tgz && && mv docker/docker /usr/local/bin
