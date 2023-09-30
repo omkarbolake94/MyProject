@@ -2,7 +2,7 @@ pipeline{
 
 agent{
  
-    dockerfile {-v root}
+    dockerfile {args '--user root'}
  
 }
 
