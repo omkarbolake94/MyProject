@@ -10,7 +10,7 @@ environment{
 
 registry = "omkarbolake94/myproject"
 registryCredential = "dockerhub"
-DOCKER_IMAGE = "V:${BUILD_NUMBER}"
+DOCKER_IMAGE = "v:${BUILD_NUMBER}"
 
 }
 
