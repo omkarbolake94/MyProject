@@ -35,7 +35,7 @@ stages {
              
              
 	  script {
-	  sh 'docker build . -t ${DOCKER_IMAGE}  -f tmp/Dockerfile'
+	  sh 'docker build -t ${DOCKER_IMAGE}  -f Dockerfile2 .'
 	
        def dockerImage = docker.image("${DOCKER_IMAGE}")
 	  
