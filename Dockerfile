@@ -12,5 +12,5 @@
 # This should not be changed
 ##ENTRYPOINT ["java","-jar","app.jar"]
 
-FROM openjdk:8
-ENTRYPOINT ["java","-jar","target/spring-boot-web.jar"]
+#FROM openjdk:8
+#ENTRYPOINT ["java","-jar","target/spring-boot-web.jar"]
